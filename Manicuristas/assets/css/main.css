@@ -1,0 +1,104 @@
+/*
+Rosa claro - #C97B84
+Rosa fuisha - #912F56
+Morado - #521945
+Morado fuerte - #33032F
+blanco grisoso - #CAD2C5
+*/
+
+html {
+    font-family: 'Nunito', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #C97B84;
+}
+a:hover {
+    opacity: 0.4;
+}
+address {
+    color: #912F56;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.container {
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    max-width: 960px;
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 6px;
+    position: relative;
+    padding: 1.8em;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+.actions {
+    position:absolute;
+    top: 1em;
+    right: 1em;
+}
+.close{
+    width: 40px;
+    height: 40px;
+    color: white;
+    background-color: #912F56;
+    border-radius: 50%;
+    display: inline-block;
+    font-weight: 300px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 5px #999;
+}
+.title {
+    text-transform: uppercase;
+    text-align: center;
+}
+.title-item {
+    /*
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #33032F;
+    */
+    border-bottom: solid 2px #33032F; /* Esto es lo mismo que lo de arriba pero en una sola linea*/
+    padding-bottom: 1em;
+    font-size: 2em;
+}
+.paragraph { /* line-height sirve para hacer un espaciado entre las lineas del parafo*/
+    line-height: 1.8em;
+    font-weight: 300;
+}
+.table {
+    width: 100%;
+    border-spacing: 0;
+}
+.table td, .table th {
+    padding: 1em;
+    text-align: left;
+}
+.table tr:nth-child(even){
+    background-color: #CAD2C5;
+}
+.fa-star, .fa-star-half {
+    color: #e9bd15;
+}
+.position{
+    padding: 10px;
+    background-color:#33032F;
+    color: white;
+    border-radius: 4px;
+    margin-right: 0.5em;
+}
+.main-image {
+    float: left;
+    height: 350px;
+    margin-right: 1.5em;
+}
