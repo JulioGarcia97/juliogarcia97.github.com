@@ -9,6 +9,9 @@ blanco grisoso - #CAD2C5
 html {
     font-family: 'Nunito', sans-serif;
 }
+img {
+    max-width: 100%;
+}
 a {
     text-decoration: none;
     color: #C97B84;
@@ -20,6 +23,8 @@ address {
     color: #912F56;
     font-weight: bold;
     font-size: 1.2em;
+    margin-top: 2em;
+    display: inline-block;
 }
 .container {
     background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -30,15 +35,32 @@ address {
 }
 .content{
     max-width: 960px;
-    max-height: 500px;
     width: 100%;
-    height: 100%;
+    height: 80vh;
     background-color: white;
     border-radius: 6px;
     position: relative;
-    padding: 1.8em;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.16);
+    overflow: scroll;
+    
 }
+
+.content{
+    padding: 1em;
+}
+td{
+    display: block;
+    width: 100%;
+}
+td:nth-of-type(1){ /* Con este seudo se selecciona el elemento del tr que le pases en el parentesis*/
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #33032F;
+}
+th{
+    display: none;
+}
+
 .actions {
     position:absolute;
     top: 1em;
@@ -91,7 +113,7 @@ address {
     color: #e9bd15;
 }
 .position{
-    padding: 10px;
+    padding: 0.5em;
     background-color:#33032F;
     color: white;
     border-radius: 4px;
@@ -101,4 +123,26 @@ address {
     float: left;
     height: 350px;
     margin-right: 1.5em;
+}
+
+/*Media Queries - Indicamos que para los dispositivos de pantallas grandes o de mas de 900px se apliquen los siguientes estilos*/
+@media(min-width:900px){
+    td{
+        display: table-cell;
+        width: auto;
+    }
+    th{
+        display: table-cell;
+    }
+    td:nth-of-type(1){
+        font-size: 1em;
+    }
+    .content{
+        padding: 1.8em;
+    }
+}
+@media(min-height:550px){
+    .content{
+        height: 500px;
+    }
 }
