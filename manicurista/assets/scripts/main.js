@@ -24,7 +24,7 @@ close.forEach(function(cl){
         content.classList.add('animated');
 
         setTimeout(function(){
-            location.href = '/';
+            location.href = '/manicurista';
         },600);
 
         return false;
