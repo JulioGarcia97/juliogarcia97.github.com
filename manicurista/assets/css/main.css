@@ -35,13 +35,13 @@ address {
 }
 .content{
     max-width: 960px;
-    width: 100%;
+    width: auto;
     height: 80vh;
     background-color: white;
     border-radius: 6px;
     position: relative;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.16);
-    /* overflow: scroll; */
+    overflow: scroll
     
 }
 
@@ -127,11 +127,11 @@ th{
 
 /*Media Queries - Indicamos que para los dispositivos de pantallas grandes o de mas de 900px se apliquen los siguientes estilos*/
 @media(min-width:900px){
-    td{
-        display: table-cell;
-        width: auto;
-    }
     th{
+        display: table-cell;
+    }
+    td{
+        width: auto;
         display: table-cell;
     }
     td:nth-of-type(1){
